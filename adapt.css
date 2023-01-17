@@ -1,0 +1,576 @@
+@media screen and (max-width: 1143px) {
+  .all-place-text__title {
+    font-size: 2.5em;
+  }
+  .all-place-text__text {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-menu {
+    background-color: #3983f3;
+    min-height: 100vh;
+    width: 50%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    transform: translate(200%, 0%);
+    top: 6.5em;
+    transition: transform 0.3s, top 0.3s;
+  }
+  .nav-menu._active {
+    transform: translate(100%, 0%);
+  }
+  .nav-ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    left: 55%;
+    transform: translate(-60%, -50%);
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-li {
+    line-height: 5;
+  }
+  .nav-menu__link {
+    color: white;
+  }
+  .nav-menu__butn {
+    background-color: #0b2b5c;
+    color: white;
+    border: none;
+  }
+  .nav-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    transition-duration: 1s;
+    cursor: pointer;
+    margin: 0 5% 0 0;
+    background-color: #3984f3;
+  }
+  .nav-icon span {
+    height: 4px;
+    width: 40px;
+    top: 50%;
+    left: 21%;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    transition-duration: 0.25s;
+    transition-delay: 0.25s;
+  }
+  .nav-icon span:before {
+    left: 0;
+    position: absolute;
+    top: -10px;
+    height: 4px;
+    width: 40px;
+    background-color: white;
+    content: "";
+    border-radius: 20px;
+    transition-duration: 0.25s;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+  .nav-icon span:after {
+    left: 0;
+    position: absolute;
+    top: 10px;
+    height: 4px;
+    width: 40px;
+    background-color: white;
+    content: "";
+    border-radius: 20px;
+    transition-duration: 0.25s;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+  .nav-icon._active {
+    border-radius: 0;
+    height: 100px;
+    margin: 0px;
+  }
+  .nav-icon._active span {
+    transition-duration: 0.1s;
+    transition-delay: 0.25s;
+    background: transparent;
+  }
+  .nav-icon._active span:before {
+    transition: top 0.25s, transform 0.25s 0.25s;
+    top: 0px;
+    transform: rotateZ(-45deg);
+  }
+  .nav-icon._active span:after {
+    transition: top 0.4s, transform 0.25s 0.25s;
+    top: 0px;
+    transform: rotateZ(45deg);
+  }
+  .home-text__title {
+    width: 50%;
+  }
+  .home-text__text {
+    width: 50%;
+    line-height: 35px;
+  }
+  .home-text__butn {
+    width: 25%;
+  }
+  .all-place {
+    flex-direction: column;
+    height: 150vh;
+  }
+  .foto-of-place {
+    width: 90%;
+    height: 80vh;
+  }
+  .all-place-text {
+    width: 90%;
+  }
+  .all-place-text hr {
+    margin-left: 44%;
+    width: 15ex;
+  }
+  .all-place-text__title {
+    text-align: center;
+    width: 100%;
+  }
+  .all-place-text__text {
+    font-size: 1.1em;
+  }
+  .navigation {
+    bottom: 50%;
+    left: 39%;
+  }
+  .all-place-text__butn {
+    margin-left: 38%;
+  }
+  .travel-video-text {
+    padding-top: 0em;
+    width: 90%;
+  }
+  .travel-video-text hr {
+    margin-top: 5%;
+  }
+  .travel-video-text__text {
+    font-size: 1.1em;
+    line-height: 35px;
+  }
+  .video-player {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .video {
+    width: 100%;
+  }
+  .video-list {
+    width: 100%;
+  }
+  .video-play {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2%;
+  }
+  .video-play__img {
+    width: 20%;
+    border-radius: 4%;
+  }
+  .video-play__description {
+    text-align: left;
+    padding-left: 3%;
+    width: 60%;
+  }
+  .video-play:hover {
+    background-color: rgba(152, 152, 152, 0.2352941176);
+  }
+  .ifr {
+    height: 50vh;
+  }
+  .travel-categories {
+    margin-top: 35vh;
+  }
+  .travel-categories-text {
+    width: 90%;
+  }
+  .travel-categories-text__text {
+    font-size: 1.1em;
+    line-height: 35px;
+  }
+  .travel-categories-text hr {
+    margin-top: 5%;
+  }
+  .travel-experiences {
+    margin-top: 20vh;
+  }
+  .travel-experiences-text hr {
+    margin-top: 5%;
+  }
+  .reviews {
+    width: 80%;
+  }
+  .review-place__text {
+    font-size: 1.3em;
+  }
+  .people-info__name {
+    font-size: 1.4em;
+  }
+  .people-info__profession {
+    font-size: 1.1em;
+  }
+  .left3 {
+    left: 20%;
+  }
+  .right3 {
+    right: 20%;
+  }
+  .book-form {
+    width: 70%;
+    display: inline-block;
+  }
+  .book-form__input {
+    width: 35%;
+    height: 25%;
+    font-size: 1.1em;
+    padding: 0 0% 0 0%;
+    margin-top: 5%;
+    text-indent: 3%;
+  }
+  .book-form__butn {
+    width: 35%;
+    font-size: 1.1em;
+  }
+  input[type=number]::-webkit-inner-spin-button {
+    width: 12%;
+  }
+  .book-container__text {
+    font-size: 1.5em;
+  }
+  .book-container__title {
+    font-size: 3em;
+  }
+  .footer-menu {
+    padding-top: 10%;
+  }
+  .footer-menu ul li a {
+    font-size: 2.7ex;
+  }
+  .media {
+    padding-bottom: 10%;
+    padding-top: 2%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav__logo {
+    height: 2em;
+  }
+  .nav-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .nav-icon span {
+    height: 3.5px;
+    width: 30px;
+    left: 25%;
+  }
+  .nav-icon span:before {
+    height: 3.5px;
+    width: 30px;
+  }
+  .nav-icon span:after {
+    height: 3.5px;
+    width: 30px;
+  }
+  .nav-icon._active {
+    height: 105px;
+  }
+  .nav-menu {
+    width: 100%;
+    transform: translate(100%, 0%);
+    transition: transform 0.5s, top 0.3s;
+  }
+  .nav-menu._active {
+    transform: translate(0%, 0%);
+  }
+  .home-text {
+    margin-top: 2%;
+  }
+  .home-text__title {
+    font-size: 2.5em;
+    width: 50%;
+    font-weight: 700;
+  }
+  .home-text__text {
+    width: 55%;
+    font-size: 1em;
+    margin: 5% 0 5% 0;
+    font-weight: 600;
+  }
+  .home-text__butn {
+    width: 30%;
+    font-size: 1.1em;
+  }
+  .all-place {
+    height: 170vh;
+  }
+  .navigation {
+    bottom: 50%;
+    left: 38%;
+  }
+  .all-place-text hr {
+    margin-left: 40%;
+  }
+  .all-place-text__title {
+    font-size: 2.5em;
+  }
+  .all-place-text__text {
+    font-size: 1em;
+    text-align: center;
+  }
+  .all-place-text__butn {
+    font-size: 1.1em;
+  }
+  .travel-video-text__text {
+    font-size: 1em;
+  }
+  .travel-video-text__title {
+    font-size: 2.5em;
+  }
+  .video-player {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .video {
+    width: 100%;
+  }
+  .video-list {
+    width: 100%;
+  }
+  .video-play {
+    height: 35%;
+    margin-bottom: 3%;
+  }
+  .categories {
+    width: 90%;
+    margin-bottom: 7%;
+  }
+  .travel-categories-text__text {
+    font-size: 1em;
+  }
+  .travel-categories-text__title {
+    font-size: 2.5em;
+  }
+  .travel-experiences {
+    margin-top: 20vh;
+  }
+  .travel-experiences-text hr {
+    margin-top: 5%;
+  }
+  .travel-experiences-text__title {
+    font-size: 2.5em;
+  }
+  .review-place__text {
+    font-size: 1.1em;
+  }
+  .people-info__name {
+    font-size: 1.2em;
+  }
+  .people-info__profession {
+    font-size: 1em;
+  }
+  .people-info__foto {
+    width: 12ex;
+    height: 12ex;
+  }
+  .book {
+    height: 90vh;
+    margin-top: 15vh;
+  }
+  .book-container__text {
+    margin-top: 0%;
+    font-size: 1.4em;
+  }
+  .book-container__title {
+    font-size: 2em;
+    width: 100%;
+  }
+  .book-form {
+    margin-top: 10%;
+    width: 70%;
+  }
+  .book-form__input {
+    width: 60%;
+    height: 20%;
+    font-size: 1.1em;
+    padding: 0 0% 0 0%;
+    margin-top: 5%;
+    text-indent: 3%;
+  }
+  .book-form__butn {
+    width: 60%;
+    margin-top: 5%;
+    font-size: 1.1em;
+  }
+  .footer-menu {
+    padding-top: 10%;
+  }
+  .footer-menu ul li a {
+    font-size: 2.5ex;
+  }
+  .company-info {
+    font-size: 0.8em;
+  }
+  .media {
+    padding-bottom: 10%;
+    padding-top: 2%;
+  }
+  .media a {
+    width: 6ex;
+    height: 6ex;
+  }
+  .media a::before {
+    width: 6ex;
+    height: 6ex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-container {
+    height: calc(100vh - 5.5em);
+  }
+  .home-text {
+    margin-top: 0%;
+  }
+  .home-text__title {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.53);
+  }
+  .home-text__text {
+    width: 55%;
+  }
+  .home-text__butn {
+    width: 40%;
+  }
+  .all-place {
+    height: 130vh;
+  }
+  .navigation {
+    left: 35%;
+  }
+  .foto-of-place {
+    height: 55vh;
+  }
+  .info {
+    bottom: -1%;
+  }
+  .all-place-text {
+    height: 85vh;
+  }
+  .all-place-text hr {
+    margin-left: 38.5%;
+  }
+  .all-place-text__text {
+    font-size: 0.9em;
+  }
+  .all-place-text__butn {
+    font-size: 1.1em;
+    width: 30%;
+    margin-left: 35%;
+  }
+  .travel-video-text__text {
+    font-size: 0.9em;
+  }
+  .travel-video-text__title {
+    font-size: 2.5em;
+  }
+  s .travel-categories-text {
+    padding-top: 4em;
+  }
+  s .travel-categories-text__text {
+    font-size: 0.9em;
+  }
+  s .travel-categories-text__title {
+    font-size: 2.5em;
+  }
+  .travel-experiences-text {
+    padding-top: 3em;
+  }
+  .review-place__text {
+    font-size: 1.1em;
+  }
+  .people-info__name {
+    font-size: 1.2em;
+  }
+  .people-info__profession {
+    font-size: 1em;
+    padding-bottom: 15%;
+  }
+  .people-info__foto {
+    width: 12ex;
+    height: 12ex;
+  }
+  .left3 {
+    left: 15%;
+  }
+  .right3 {
+    right: 15%;
+  }
+  .book {
+    margin-top: 0vh;
+    height: 75vh;
+  }
+  .book-container__text {
+    margin-top: 0%;
+    font-size: 1.2em;
+  }
+  .book-container__title {
+    font-size: 1.6em;
+    width: 100%;
+  }
+  .book-form {
+    margin-top: 10%;
+    width: 80%;
+  }
+  .book-form__input {
+    width: 75%;
+    margin-top: 7%;
+    height: 25%;
+  }
+  .book-form__butn {
+    width: 75%;
+    margin-top: 7%;
+  }
+  .footer-menu {
+    padding-left: 0%;
+    padding-top: 10%;
+  }
+  .footer-menu ul {
+    flex-direction: column;
+    padding-right: 0%;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+  .footer-menu ul li {
+    margin-top: 2%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .footer-menu ul li a {
+    font-size: 2.5ex;
+  }
+  .company-info {
+    font-size: 0.8em;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  .company-info__copyright {
+    padding-right: 0%;
+  }
+  .media {
+    margin-top: 5%;
+    padding-left: 0%;
+  }
+}
